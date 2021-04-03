@@ -22,31 +22,31 @@ public class ProductTestCase {
 	private static AnnotationConfigApplicationContext context;
 	
 	
-	private static LizenzDAO lizenzDAO ;
-
-	 @Autowired
-	private Lizenz lizenz;
-	
-	
-	@BeforeClass
-	public static void init() {
-		context = new AnnotationConfigApplicationContext();
-		context.scan("com.tqg.*");
-		context.refresh();
-		lizenzDAO = (LizenzDAO)context.getBean("LizenzDAO");
-	}
-
-	@Test
-	public  void testAddProduct() {
-		
-		lizenz = new Lizenz();
-		lizenz.setId(100);
-		lizenz.setLizenzName("JUnitName");
-		lizenz.setLizenzKey("JUnitKey");
-		
-		assertEquals("Successfully added product to the table!", true , lizenz);
-		
-	}
+//	private static LizenzDAO lizenzDAO ;
+//
+//	 @Autowired
+//	private Lizenz lizenz;
+//	
+//	
+//	@BeforeClass
+//	public static void init() {
+//		context = new AnnotationConfigApplicationContext();
+//		context.scan("com.tqg.*");
+//		context.refresh();
+//		lizenzDAO = (LizenzDAO)context.getBean("LizenzDAO");
+//	}
+//
+//	@Test
+//	public  void testAddProduct() {
+//		
+//		lizenz = new Lizenz();
+//		lizenz.setId(100);
+//		lizenz.setLizenzName("JUnitName");
+//		lizenz.setLizenzKey("JUnitKey");
+//		
+//		assertEquals("Successfully added product to the table!", true , lizenz);
+//		
+//	}
 	
 //	@Test
 //	public  void testGetProduct() {
